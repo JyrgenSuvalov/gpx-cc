@@ -638,6 +638,15 @@ console.log(
 ```
 
 ---
+layout: cover
+class: 
+---
+
+<SlidevVideo v-click autoplay class="mx-auto">
+  <source src="/switch.mp4" type="video/mp4" />
+</SlidevVideo>
+
+---
 layout: center
 class: text-center
 ---

@@ -1,0 +1,66 @@
+/* ————————————————————————————————————
+   Design tokens — ported from jyrkki-website
+   ———————————————————————————————————— */
+
+:root {
+  color-scheme: light dark;
+
+  /* Brand teal tints */
+  --teal-100: oklch(96% 0.07 169deg);
+  --teal-200: oklch(89% 0.2 169deg);
+  --teal-300: oklch(82% 0.22 169deg);
+  --teal-400: oklch(76% 0.21 169deg);
+  --teal-500: oklch(68% 0.18 169deg);
+  --teal-600: oklch(59% 0.16 169deg);
+  --teal-700: oklch(50% 0.14 169deg);
+  --teal-800: oklch(39% 0.11 169deg);
+  --teal-900: oklch(29% 0.08 169deg);
+
+  /* Surface */
+  --color-surface: light-dark(oklch(94% 0.002 240deg), oklch(20% 0.003 240deg));
+  --color-surface-alt: light-dark(oklch(85% 0.004 240deg), oklch(30% 0.004 240deg));
+  --color-surface-inverse: light-dark(oklch(20% 0.003 240deg), oklch(94% 0.002 240deg));
+
+  /* Text */
+  --color-text: var(--color-surface-inverse);
+  --color-text-secondary: oklch(from var(--color-text) calc(l * 0.9) c h);
+  --color-text-bright: light-dark(oklch(0% 0 0deg), oklch(100% 0 0deg));
+
+  /* Brand */
+  --color-primary: var(--teal-200);
+  --color-primary-glare: var(--teal-600);
+
+  /* Border */
+  --color-border: var(--color-surface-alt);
+
+  /* Accent — adjusts per surface */
+  --color-accent: light-dark(var(--color-primary-glare), var(--color-primary));
+  --color-accent-muted: light-dark(
+    oklch(45% 0.16 168.35deg / 54%),
+    oklch(87.7% 0.218 168.35deg / 53.95%)
+  );
+
+  /* Selection */
+  --color-selection-bg: oklch(87.7% 0.218 168.35deg / 93.95%);
+  --color-selection-text: oklch(0% 0 0deg);
+
+  /* Typography */
+  --font-base: 'Source Serif 4', georgia, 'Times New Roman', serif;
+  --font-heading: 'Mort', sans-serif;
+  --tracking: -0.01ch;
+  --tracking-s: -0.025ch;
+
+  /* Map to Slidev theme variables */
+  --slidev-theme-primary: var(--color-accent);
+  --slidev-theme-background: var(--color-surface);
+  --slidev-theme-foreground: var(--color-text);
+  --slidev-theme-accents-teal: var(--teal-500);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

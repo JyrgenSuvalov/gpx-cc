@@ -1,8 +1,14 @@
-:root {
-  --slidev-theme-primary: #5d8392;
-}
-
 .slidev-layout {
+  font-family: var(--font-base);
+  letter-spacing: var(--tracking);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: var(--tracking-s);
+  }
+
   h1 {
     color: var(--slidev-theme-primary);
   }
