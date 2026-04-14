@@ -638,13 +638,38 @@ console.log(
 ```
 
 ---
+layout: center
+---
+
+# PileUp
+
+Press <kbd>space</kbd> to stack 'em up
+
+<PileUp
+  :images="[
+    '/Screenshot 2026-04-14 at 21.20.04.png',
+    '/Screenshot 2026-04-14 at 21.21.17.png',
+    '/Screenshot 2026-04-14 at 21.21.52.png',
+    '/Screenshot 2026-04-14 at 21.22.38.png',
+    '/Screenshot 2026-04-14 at 21.44.00.png',
+  ]"
+  width="400px"
+  class="mt-8"
+/>
+
+---
 layout: cover
-class: 
 ---
 
 <SlidevVideo v-click autoplay class="mx-auto">
   <source src="/switch.mp4" type="video/mp4" />
 </SlidevVideo>
+
+---
+layout: center
+---
+
+<Youtube id="5dEp1ZpYDUg?start=88" width="900" height="506" />
 
 ---
 layout: center
