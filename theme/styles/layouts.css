@@ -3,6 +3,37 @@
   letter-spacing: var(--tracking);
   color: var(--color-text);
   background-color: var(--color-surface);
+  position: relative;
+
+  /* Colour-shifting grain tint — translucent accent wash behind the grain. */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--grain-tint);
+    mix-blend-mode: color;
+  }
+
+  /* Grain texture overlay. */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background-image: url("/textures/grain.png");
+    background-repeat: repeat;
+    background-size: 200px;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: hard-light;
+    filter: brightness(var(--grain-brightness)) contrast(var(--grain-contrast));
+  }
+
+  @media (prefers-contrast: more) {
+    &::before, &::after { display: none; }
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);

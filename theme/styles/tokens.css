@@ -50,6 +50,12 @@
   --tracking: -0.01ch;
   --tracking-s: -0.025ch;
 
+  /* Grain overlay — ported from jyrkki-website */
+  --grain-opacity: 0.3;
+  --grain-brightness: 0.75;
+  --grain-contrast: 2;
+  --grain-tint: oklch(none none none / 0%);
+
   /* Map to Slidev theme variables */
   --slidev-theme-primary: var(--color-accent);
   --slidev-theme-background: var(--color-surface);
@@ -63,4 +69,18 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
+
+  --grain-opacity: 0.35;
+  --grain-brightness: 0.75;
+  --grain-contrast: 3;
+  --grain-tint: oklch(89% 0.2 169deg / 5%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --grain-opacity: 0.35;
+    --grain-brightness: 0.75;
+    --grain-contrast: 3;
+    --grain-tint: oklch(89% 0.2 169deg / 5%);
+  }
 }

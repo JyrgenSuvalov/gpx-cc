@@ -652,9 +652,57 @@ Press <kbd>space</kbd> to stack 'em up
     '/Screenshot 2026-04-14 at 21.21.52.png',
     '/Screenshot 2026-04-14 at 21.22.38.png',
     '/Screenshot 2026-04-14 at 21.44.00.png',
+    '/Screenshot 2026-04-14 at 22.07.05.png',
   ]"
   width="400px"
   class="mt-8"
+/>
+
+---
+class: '!p-0 !overflow-hidden relative'
+---
+
+<ImageGrid
+  :images="[
+    '/gridImages/Screenshot 2026-04-14 at 22.25.25.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.25.43.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.25.50.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.28.44.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.29.07.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.29.23.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.29.28.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.29.41.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.29.59.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.04.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.21.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.24.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.33.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.45.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.30.55.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.31.03.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.31.37.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.31.45.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.31.54.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.32.06.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.32.27.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.32.50.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.33.11.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.33.18.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.33.30.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.33.39.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.33.49.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.34.11.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.34.15.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.34.27.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.34.43.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.34.54.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.35.29.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.35.39.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.35.46.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.36.17.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.36.30.png',
+    '/gridImages/Screenshot 2026-04-14 at 22.36.52.png',
+  ]"
 />
 
 ---
