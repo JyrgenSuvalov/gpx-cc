@@ -60,8 +60,8 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 - 🎥 **Recording** - built-in recording and camera view
 - 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
 - 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
+  <br>
+  <br>
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
@@ -95,22 +95,26 @@ level: 2
 
 Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
 
+more text
+
 ## Keyboard Shortcuts
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
@@ -156,6 +160,7 @@ doubled.value = 2
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
@@ -203,8 +208,8 @@ const author = reactive({
   books: [
     'Vue 2 - Advanced Guide',
     'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+    'Vue 4 - The Mystery',
+  ],
 })
 ```
 
@@ -218,11 +223,11 @@ export default {
         books: [
           'Vue 2 - Advanced Guide',
           'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
+          'Vue 4 - The Mystery',
+        ],
+      },
     }
-  }
+  },
 }
 ```
 
@@ -235,10 +240,10 @@ export default {
       books: [
         'Vue 2 - Advanced Guide',
         'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
+        'Vue 4 - The Mystery',
+      ],
+    },
+  }),
 }
 ```
 
@@ -252,8 +257,8 @@ const author = {
   books: [
     'Vue 2 - Advanced Guide',
     'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+    'Vue 4 - The Mystery',
+  ],
 }
 </script>
 ```
@@ -460,7 +465,9 @@ $\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
 \nabla \cdot \vec{B} &= 0 \\
@@ -622,7 +629,12 @@ import { emptyArray, sayHello } from './external'
 
 sayHello()
 console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
+console.log(
+  emptyArray<number>(10).reduce(
+    (fib) => [...fib, fib.at(-1)! + fib.at(-2)!],
+    [1, 1],
+  ),
+)
 ```
 
 ---
