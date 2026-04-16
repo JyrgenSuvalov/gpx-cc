@@ -113,7 +113,15 @@ class: text-center
 layout: center
 ---
 
-<img src="./Aaron_wiki.png" />
+<div class="overflow-hidden h-full w-full flex items-center justify-center">
+  <img
+    src="./Aaron_wiki.png"
+    class="max-h-full max-w-full object-contain transition-transform duration-700 ease-out"
+    :style="{ transform: $clicks >= 1 ? 'scale(2.0) translate(60px, -180px)' : 'none' }"
+  />
+</div>
+
+<div v-click class="hidden"></div>
 
 <!-- 
 On January 6, 2011, Swartz was arrested by Massachusetts Institute of Technology (MIT) police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet and setting it to download academic journal articles from JSTOR using a guest user account issued to him by MIT.[14][15] Federal prosecutors, led by Carmen Ortiz, charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act,[16] carrying a cumulative maximum penalty of $1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.[17] Swartz declined a plea bargain under which he would have served six months in federal prison.[18] Two days after the prosecution rejected a counter-offer by Swartz, he was found dead in his Brooklyn apartment.[19][20] In 2013, Swartz was inducted posthumously into the Internet Hall of Fame.[21]
