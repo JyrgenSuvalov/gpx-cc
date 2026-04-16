@@ -67,213 +67,79 @@ class: text-center
 # Structure
 
 <div class="flex items-center justify-center gap-10 mt-32 text-6xl">
-  <div class="px-10 py-8 bg-blue-500/20 rounded-2xl">Lecture</div>
+  <div class="px-10 py-8 bg-blue-900 rounded-2xl">Lecture</div>
   <div class="text-5xl">→</div>
-  <div class="px-10 py-8 bg-green-500/20 rounded-2xl">Setup</div>
+  <div class="px-10 py-8 bg-green-900 rounded-2xl">Setup</div>
   <div class="text-5xl">→</div>
-  <div class="px-10 py-8 bg-orange-500/20 rounded-2xl">Build</div>
+  <div class="px-10 py-8 bg-orange-900 rounded-2xl">Build</div>
 </div>
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+layout: center
 ---
 
-# Code
+<Youtube id="SmHgtyym6OA?start=1512" width="900" height="506" />
 
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
+<!-- Rich Harris - Frameworks for humans in the age of machines at NY Web Performance Meetup-->
 
 ---
-level: 2
+layout: center
 ---
 
-# Shiki Magic Move
+<img src="./markdownlanguage.png"/>
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+<!-- 
+Markdown[9] is a lightweight markup language for creating formatted text using a plain-text editor.
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery',
-  ],
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery',
-        ],
-      },
-    }
-  },
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery',
-      ],
-    },
-  }),
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery',
-  ],
-}
-</script>
-```
-````
+ -->
 
 ---
+class: text-center
+---
 
-# Components
+<div class="flex items-center justify-center gap-24 mt-16">
+  <div v-click class="flex flex-col items-center">
+    <img src="/John_Gruber_profile.png" class="w-60 h-60 rounded-full object-cover" />
+    <p class="mt-4 text-2xl">John Gruber</p>
+  </div>
 
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
+  <div v-click class="flex flex-col items-center">
+    <img src="/Aaron_Swartz_profile.png" class="w-60 h-60 rounded-full object-cover" />
+    <p class="mt-4 text-2xl">Aaron Swartz</p>
+  </div>
 </div>
 
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
 ---
-class: px-20
+layout: center
 ---
 
-# Themes
+<img src="./Aaron_wiki.png" />
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+<!-- 
+On January 6, 2011, Swartz was arrested by Massachusetts Institute of Technology (MIT) police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet and setting it to download academic journal articles from JSTOR using a guest user account issued to him by MIT.[14][15] Federal prosecutors, led by Carmen Ortiz, charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act,[16] carrying a cumulative maximum penalty of $1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.[17] Swartz declined a plea bargain under which he would have served six months in federal prison.[18] Two days after the prosecution rejected a counter-offer by Swartz, he was found dead in his Brooklyn apartment.[19][20] In 2013, Swartz was inducted posthumously into the Internet Hall of Fame.[21]
+ -->
 
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
 ---
-theme: default
+class: 'flex !p-0'
 ---
-```
 
-```yaml
----
-theme: seriph
----
-```
+<div class="w-1/2 flex items-center p-12">
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
+<v-click>
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
+> One of Altman’s batch mates in the first Y Combinator cohort was Aaron Swartz, a brilliant but troubled coder who died by suicide in 2013 and is now remembered in many tech circles as something of a sage. Not long before his death, Swartz expressed concerns about Altman to several friends. “You need to understand that Sam can never be trusted,” he told one. “He is a sociopath. He would do anything.”
+>
+> <span class="block mt-4 text-sm opacity-70">— Ronan Farrow & Andrew Marantz, <cite>“Sam Altman May Control Our Future—Can He Be Trusted?”</cite>, The New Yorker, April 6 2026</span>
+
+</v-click>
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
+<div class="w-1/2 h-full">
+  <video autoplay loop muted class="w-full h-full object-cover">
+    <source src="/altman_small.mp4" type="video/mp4" />
+  </video>
+</div>
 
 ---
 

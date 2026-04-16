@@ -5,12 +5,17 @@
   background-color: var(--color-surface);
   position: relative;
 
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
   /* Colour-shifting grain tint — translucent accent wash behind the grain. */
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: 1;
     pointer-events: none;
     background-color: var(--grain-tint);
     mix-blend-mode: color;
@@ -21,7 +26,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -2;
+    z-index: 1;
     pointer-events: none;
     background-image: url("/textures/grain.png");
     background-repeat: repeat;
