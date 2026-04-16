@@ -74,6 +74,13 @@ class: text-center
   <div class="px-10 py-8 bg-orange-900 rounded-2xl">Build</div>
 </div>
 
+<style>
+  div {
+    font-family: 'Mort', sans-serif;
+  }
+
+  </style>
+
 ---
 layout: center
 ---
@@ -211,32 +218,32 @@ class: text-center
 
 # Chat interfaces
 
-<p class="opacity-60 -mt-2">The "text box" — general-purpose AI assistants</p>
+<p class="opacity-80 -mt-2">The "text box" — general-purpose AI assistants</p>
 
 <div class="grid grid-cols-3 gap-4 mt-8 px-12">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">ChatGPT</div>
-    <div class="text-sm opacity-60">OpenAI</div>
+    <div class="text-sm opacity-80">OpenAI</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Claude.ai</div>
-    <div class="text-sm opacity-60">Anthropic</div>
+    <div class="text-sm opacity-80">Anthropic</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Gemini</div>
-    <div class="text-sm opacity-60">Google</div>
+    <div class="text-sm opacity-80">Google</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Copilot</div>
-    <div class="text-sm opacity-60">Microsoft</div>
+    <div class="text-sm opacity-80">Microsoft</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Perplexity</div>
-    <div class="text-sm opacity-60">answer engine</div>
+    <div class="text-sm opacity-80">answer engine</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Grok</div>
-    <div class="text-sm opacity-60">xAI</div>
+    <div class="text-sm opacity-80">xAI</div>
   </div>
 </div>
 
@@ -262,24 +269,24 @@ class: text-center
 
 # Tab-completion
 
-<p class="opacity-60 -mt-2">Lives in your IDE — suggests code as you type</p>
+<p class="opacity-80 -mt-2">Lives in your IDE — suggests code as you type</p>
 
 <div class="grid grid-cols-2 gap-4 mt-8 px-24">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">GitHub Copilot</div>
-    <div class="text-sm opacity-60">the original, broad IDE support</div>
+    <div class="text-sm opacity-80">the original, broad IDE support</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Cursor</div>
-    <div class="text-sm opacity-60">VS Code fork rebuilt around AI</div>
+    <div class="text-sm opacity-80">VS Code fork rebuilt around AI</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Windsurf</div>
-    <div class="text-sm opacity-60">Codeium — same lane, lower price</div>
+    <div class="text-sm opacity-80">Codeium — same lane, lower price</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Supermaven · Tabnine</div>
-    <div class="text-sm opacity-60">earlier generation</div>
+    <div class="text-sm opacity-80">earlier generation</div>
   </div>
 </div>
 
@@ -301,24 +308,24 @@ class: text-center
 
 # Vibecoding
 
-<p class="opacity-60 -mt-2">Describe what you want — get a working app</p>
+<p class="opacity-80 -mt-2">Describe what you want — get a working app</p>
 
 <div class="grid grid-cols-2 gap-4 mt-8 px-24">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Lovable</div>
-    <div class="text-sm opacity-60">full-stack from chat</div>
+    <div class="text-sm opacity-80">full-stack from chat</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Bolt.new</div>
-    <div class="text-sm opacity-60">browser, fastest scaffolding</div>
+    <div class="text-sm opacity-80">browser, fastest scaffolding</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">v0</div>
-    <div class="text-sm opacity-60">Vercel — React UI components</div>
+    <div class="text-sm opacity-80">Vercel — React UI components</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Replit</div>
-    <div class="text-sm opacity-60">all-in-one browser IDE</div>
+    <div class="text-sm opacity-80">all-in-one browser IDE</div>
   </div>
 </div>
 
@@ -340,32 +347,32 @@ class: text-center
 
 # Agentic coding
 
-<p class="opacity-60 -mt-2">Describe the task — the agent plans, edits, runs, iterates</p>
+<p class="opacity-80 -mt-2">Describe the task — the agent plans, edits, runs, iterates</p>
 
 <div class="grid grid-cols-3 gap-4 mt-8 px-12">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Claude Code</div>
-    <div class="text-sm opacity-60">Anthropic — terminal native</div>
+    <div class="text-sm opacity-80">Anthropic — terminal native</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Copilot Coding Agent</div>
-    <div class="text-sm opacity-60">GitHub-integrated</div>
+    <div class="text-sm opacity-80">GitHub-integrated</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Cursor Agent</div>
-    <div class="text-sm opacity-60">in-editor agent mode</div>
+    <div class="text-sm opacity-80">in-editor agent mode</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Aider</div>
-    <div class="text-sm opacity-60">open-source, model-agnostic</div>
+    <div class="text-sm opacity-80">open-source, model-agnostic</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Codex CLI</div>
-    <div class="text-sm opacity-60">OpenAI</div>
+    <div class="text-sm opacity-80">OpenAI</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">OpenCode</div>
-    <div class="text-sm opacity-60">open-source, BYOK</div>
+    <div class="text-sm opacity-80">open-source, BYOK</div>
   </div>
 </div>
 
@@ -391,36 +398,36 @@ class: text-center
 
 # AI-native design
 
-<p class="opacity-60 -mt-2">Design tools agents can read from <em>and</em> write to</p>
+<p class="opacity-80 -mt-2">Design tools agents can read from <em>and</em> write to</p>
 
 <div class="grid grid-cols-2 gap-6 mt-8 px-12 text-left">
   <div>
     <h6 class="opacity-100 mb-2">0 → 1 generation</h6>
     <div class="space-y-2">
-      <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+      <div class="p-3 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
         <div class="font-semibold">Google Stitch</div>
-        <div class="text-sm opacity-60">prompt → multi-screen, MCP out</div>
+        <div class="text-sm opacity-80">prompt → multi-screen, MCP out</div>
       </div>
-      <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+      <div class="p-3 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
         <div class="font-semibold">Figma AI Agents</div>
-        <div class="text-sm opacity-60">agents inside your design system</div>
+        <div class="text-sm opacity-80">agents inside your design system</div>
       </div>
     </div>
   </div>
   <div>
     <h6 class="opacity-100 mb-2">Design ↔ code canvases</h6>
     <div class="space-y-2">
-      <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+      <div class="p-3 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
         <div class="font-semibold">Pencil.dev</div>
-        <div class="text-sm opacity-60">.pen files in your repo</div>
+        <div class="text-sm opacity-80">.pen files in your repo</div>
       </div>
-      <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+      <div class="p-3 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
         <div class="font-semibold">Paper.design</div>
-        <div class="text-sm opacity-60">canvas built on real HTML/CSS</div>
+        <div class="text-sm opacity-80">canvas built on real HTML/CSS</div>
       </div>
-      <div class="p-3 bg-white/5 rounded-xl border border-white/10">
+      <div class="p-3 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
         <div class="font-semibold">OpenPencil</div>
-        <div class="text-sm opacity-60">open-source, agent teams</div>
+        <div class="text-sm opacity-80">open-source, agent teams</div>
       </div>
     </div>
   </div>
@@ -449,29 +456,36 @@ class: text-center
 
 # Spec-driven development
 
-<p class="opacity-60 -mt-2">Give the agent a spec — let it implement against a contract</p>
+<p class="opacity-80 -mt-2">Give the agent a spec — let it implement against a contract</p>
 
 <div class="grid grid-cols-2 gap-4 mt-8 px-24">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Spec Kit</div>
-    <div class="text-sm opacity-60">GitHub — Specify · Plan · Tasks · Implement</div>
+    <div class="text-sm opacity-80">GitHub — Specify · Plan · Tasks · Implement</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">OpenSpec</div>
-    <div class="text-sm opacity-60">Fission AI — lightweight, brownfield-first</div>
+    <div class="text-sm opacity-80">Fission AI — lightweight, brownfield-first</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Kiro</div>
-    <div class="text-sm opacity-60">AWS — agentic IDE, EARS notation</div>
+    <div class="text-sm opacity-80">AWS — agentic IDE, EARS notation</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">BMAD-METHOD</div>
-    <div class="text-sm opacity-60">multi-agent personas, PRDs first</div>
+    <div class="text-sm opacity-80">multi-agent personas, PRDs first</div>
+  </div>
+  <div class="col-span-2 p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
+    <div class="text-xl font-semibold">Superpowers</div>
+    <div class="text-sm opacity-80">Jesse Vincent — discipline layer: Clarify · Brainstorm · Design · Plan · TDD · Review · Verify</div>
   </div>
 </div>
 
 <!--
 The central idea: don't prompt AI to write code — give it a specification and let agents implement against a contract. Specs become the source of truth, not the code.
+
+Superpowers (Jesse Vincent / Prime Radiant) — Bridge between spec-driven and autonomous loops. Most popular framework in this space (121K+ stars as of April 2026, in the Anthropic plugins marketplace since January). 14 composable skills installed into Claude Code via one command. Not a spec framework, not a loop runner — a *discipline layer* that forces the agent to behave like a senior engineer. 7-phase workflow: Clarify → Brainstorm → Design → Plan → Code (TDD) → Review → Verify. Key mechanisms: Socratic brainstorming before committing to a solution; strict RED-GREEN-REFACTOR TDD (the framework deletes code written without a failing test first); fresh subagents per task (solving context rot within one session); two-stage review (spec compliance, then code quality); master dispatcher auto-activates on "using superpowers". Sits between ad-hoc prompting and full spec-driven — defines *how to behave while building*, complementary to Spec Kit/OpenSpec (*what to build*) and Ralph/GSD (*how to keep going*).
+
 
 Spec Kit (GitHub) — GitHub's official open-source SDD toolkit. Four-phase workflow: Specify → Plan → Tasks → Implement. Works with Copilot, Claude Code, Gemini CLI, and others via a CLI (specify) that scaffolds spec files into your repo. The spec acts as a constitution — every AI action is governed by it. Recently added YAML-based resumable workflow pipelines with human review gates and fan-out parallelism. Relatively heavyweight (Python setup, rigid phase gates), best for medium-to-large greenfield features where the upfront planning investment pays off.
 
@@ -488,16 +502,16 @@ class: text-center
 
 # Autonomous loops
 
-<p class="opacity-60 -mt-2">Disposable sessions — fresh context, git as memory</p>
+<p class="opacity-80 -mt-2">Disposable sessions — fresh context, git as memory</p>
 
 <div class="grid grid-cols-2 gap-4 mt-8 px-32">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">Ralph loops</div>
-    <div class="text-sm opacity-60">Huntley — bash <code>while</code>, fresh agent each iter</div>
+    <div class="text-sm opacity-80">Huntley — bash <code>while</code>, fresh agent each iter</div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)]">
     <div class="text-xl font-semibold">GSD</div>
-    <div class="text-sm opacity-60">Discuss · Research · Plan · Execute · Verify</div>
+    <div class="text-sm opacity-80">Discuss · Research · Plan · Execute · Verify</div>
   </div>
 </div>
 
@@ -515,12 +529,12 @@ class: text-center
 
 # Multi-agent orchestration
 
-<p class="opacity-60 -mt-2">The frontier — many agents, coordinated roles, shared memory</p>
+<p class="opacity-90 -mt-2">The frontier — many agents, coordinated roles, shared memory</p>
 
 <div class="flex justify-center mt-8 px-32">
-  <div class="p-6 bg-white/5 rounded-xl border border-white/10 max-w-md">
+  <div class="p-6 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)] max-w-md">
     <div class="text-2xl font-semibold">Gas Town</div>
-    <div class="text-sm opacity-60 mt-2">Steve Yegge — Mayor orchestrates 20–30+ Claude Code instances · Polecats · Witness · Refinery · Beads memory</div>
+    <div class="text-sm opacity-80 mt-2">Steve Yegge — Mayor orchestrates 20–30+ Claude Code instances · Polecats · Witness · Refinery · Beads memory</div>
   </div>
 </div>
 
@@ -534,37 +548,35 @@ Gas Town (Steve Yegge) — The most ambitious and speculative system. A full mul
 class: text-center
 ---
 
-# Maturity spectrum
-
-<p class="opacity-60 -mt-2">Where you are on the curve</p>
+# Autonomy spectrum
 
 <div class="flex flex-col gap-3 mt-8 px-24 text-left">
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-center gap-4">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)] flex items-center gap-4">
     <div class="text-3xl opacity-40 w-10 text-center">1</div>
     <div>
-      <div class="text-lg font-semibold">Vibe coding</div>
-      <div class="text-sm opacity-60">no framework, just chat — fine for small tasks</div>
+      <div class="text-lg font-semibold">Pure vibes</div>
+      <div class="text-sm opacity-80">no framework, just chat — fine for small tasks</div>
     </div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-center gap-4">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)] flex items-center gap-4">
     <div class="text-3xl opacity-40 w-10 text-center">2</div>
     <div>
       <div class="text-lg font-semibold">Spec-driven</div>
-      <div class="text-sm opacity-60">OpenSpec · Spec Kit — define what to build first</div>
+      <div class="text-sm opacity-80">OpenSpec · Spec Kit — define what to build first</div>
     </div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-center gap-4">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)] flex items-center gap-4">
     <div class="text-3xl opacity-40 w-10 text-center">3</div>
     <div>
       <div class="text-lg font-semibold">Autonomous loops</div>
-      <div class="text-sm opacity-60">Ralph · GSD — unattended, ship overnight</div>
+      <div class="text-sm opacity-80">Ralph · GSD — unattended, ship overnight</div>
     </div>
   </div>
-  <div class="p-4 bg-white/5 rounded-xl border border-white/10 flex items-center gap-4">
+  <div class="p-4 bg-[var(--color-surface-alt)] rounded-xl border border-[var(--color-border)] flex items-center gap-4">
     <div class="text-3xl opacity-40 w-10 text-center">4</div>
     <div>
       <div class="text-lg font-semibold">Multi-agent orchestration</div>
-      <div class="text-sm opacity-60">Gas Town · BMAD — frontier, powerful but raw</div>
+      <div class="text-sm opacity-80">Gas Town · BMAD — frontier, powerful but raw</div>
     </div>
   </div>
 </div>
@@ -579,168 +591,6 @@ Multi-agent orchestration (Gas Town, BMAD) → Many agents, specialized roles, c
 
 Most productive teams in 2026 are at the spec-driven + loop layer. Multi-agent orchestration is where things are heading but the tooling is still maturing fast.
 -->
-
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(
-  emptyArray<number>(10).reduce(
-    (fib) => [...fib, fib.at(-1)! + fib.at(-2)!],
-    [1, 1],
-  ),
-)
-```
-
-
 
 ---
 class: '!p-0 !overflow-hidden relative'
@@ -760,7 +610,6 @@ class: '!p-0 !overflow-hidden relative'
     '/gridImages/Screenshot 2026-04-14 at 22.30.04.png',
     '/gridImages/Screenshot 2026-04-14 at 22.30.21.png',
     '/gridImages/Screenshot 2026-04-14 at 22.30.24.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.30.33.png',
     '/gridImages/Screenshot 2026-04-14 at 22.30.45.png',
     '/gridImages/Screenshot 2026-04-14 at 22.30.55.png',
     '/gridImages/Screenshot 2026-04-14 at 22.31.03.png',
@@ -772,26 +621,67 @@ class: '!p-0 !overflow-hidden relative'
     '/gridImages/Screenshot 2026-04-14 at 22.32.50.png',
     '/gridImages/Screenshot 2026-04-14 at 22.33.11.png',
     '/gridImages/Screenshot 2026-04-14 at 22.33.18.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.33.30.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.33.39.png',
     '/gridImages/Screenshot 2026-04-14 at 22.33.49.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.34.11.png',
     '/gridImages/Screenshot 2026-04-14 at 22.34.15.png',
     '/gridImages/Screenshot 2026-04-14 at 22.34.27.png',
     '/gridImages/Screenshot 2026-04-14 at 22.34.43.png',
     '/gridImages/Screenshot 2026-04-14 at 22.34.54.png',
     '/gridImages/Screenshot 2026-04-14 at 22.35.29.png',
     '/gridImages/Screenshot 2026-04-14 at 22.35.39.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.35.46.png',
-    '/gridImages/Screenshot 2026-04-14 at 22.36.17.png',
     '/gridImages/Screenshot 2026-04-14 at 22.36.30.png',
     '/gridImages/Screenshot 2026-04-14 at 22.36.52.png',
+    '/gridImages/agentteams.png',
+    '/gridImages/bmad.png',
+    '/gridImages/enterprisevibecode.png',
+    '/gridImages/fixedvibe.png',
+    '/gridImages/forbeginners.png',
+    '/gridImages/goodbye.png',
+    '/gridImages/level2.png',
+    '/gridImages/open-spec.png',
+    '/gridImages/ralph.png',
+    '/gridImages/ralph2.png',
+    '/gridImages/rip.png',
+    '/gridImages/specdriven.png',
+    '/gridImages/specopenspec.png',
+    '/gridImages/sucks.png',
+    '/gridImages/notvibecode.png',
+    '/gridImages/image.png',
   ]"
 />
 
 ---
+layout: image
+image: "/touch_grass.jpg"
+class: text-center
+---
+
+Touch grass.
+
+<style>
+  p {
+    margin-block-start: 3rem;
+    font-family: 'Mort', sans-serif;
+    font-size: 4rem;
+  }
+  </style>
 
 
+<!-- Photo by <a href="https://unsplash.com/@davealmine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dawid Zawiła</a> on <a href="https://unsplash.com/photos/green-grass-fiels-9d33wIMMzoE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+      
+---
+ layout: center
+---
+
+A few thoughts on the good, the bad and the ugly.
+
+<style>
+
+  p {
+    font-family: 'Mort', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  </style>
 
 ---
 layout: center
@@ -800,12 +690,16 @@ layout: center
 <Youtube id="5dEp1ZpYDUg?start=88" width="900" height="506" />
 
 ---
-layout: center
-class: text-center
+ layout: center
 ---
 
-# Learn More
+Enough yapping, let’s get into it.
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<style>
 
-<PoweredBySlidev mt-10 />
+  p {
+    font-family: 'Mort', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  </style>
