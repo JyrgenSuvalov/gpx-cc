@@ -67,7 +67,7 @@ After installing, open Ghostty and use it instead of Terminal for the rest of th
 
 ### 1.4 Node.js (via nvm, with pnpm)
 
-**What it is:** Node.js is a JavaScript runtime — this is the most popular runtime for building full-stack applications in webdev - for both frontend and backend. It's not the greatest and you might choose something else, but it's a sane option to get started. We'll install it through **nvm** (Node Version Manager), which lets you switch between Node versions easily, and we'll use **pnpm** as our package manager (it's faster and more disk-efficient than npm).
+**What it is:** Node.js is a JavaScript runtime — this is the most popular runtime for building full-stack applications in webdev - for both frontend and backend. It's arguably not the greatest and you might choose something else, but it's a sane default option to get started. We'll install it through **nvm** (Node Version Manager), which lets you switch between Node versions easily, and we'll use **pnpm** as our package manager (it's faster and more disk-efficient than npm).
 
 **Install:**
 
