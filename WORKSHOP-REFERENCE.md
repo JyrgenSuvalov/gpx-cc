@@ -399,10 +399,7 @@ Do the same for a dev persona, a planner, etc. The `description` field is import
 
 Now when you're in a main Claude Code session, you can simply ask it to delegate tasks to the subagents by name. Have the DEV persona do the openspec propose and apply work, then ask it to have the QA subagent review the changes without leaving the session. The main session stays focused on the overall workflow, while the subagents handle specialized tasks in their own context windows.
 
-```
-
-Now when you're in a Claude Code session, you can say things like:
-
+- _"Have the developer use openspec propose to create a plan for the next phase"_
 - _"Have the qa-reviewer check the latest changes"_
 - _"Use the qa-reviewer agent to review the auth module"_
 
@@ -487,4 +484,3 @@ Repeat until you run out of tokens or time!
 ---
 
 _Happy building! Remember — the AI is a tool, not a replacement for thinking. Read the specs it generates, push back when something doesn't make sense, and stay engaged with the process. The best results come when you meet it halfway._
-```
