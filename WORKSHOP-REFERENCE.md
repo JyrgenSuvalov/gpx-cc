@@ -13,9 +13,13 @@ We won't just be chatting with an AI. We'll be running a structured development 
 ## Prerequisites
 
 - A Mac (not really, WSL on Windows is fine as well, but some instructions might differ)
-- A Claude Pro or Max subscription (for Claude Code access)
+- A way to pay for Claude Code usage. Any of these works:
+  - A Claude Pro, Max, Team, or Enterprise subscription (sign in on first run)
+  - An Anthropic API key with billing enabled (`export ANTHROPIC_API_KEY=...`)
+  - A Bedrock or Vertex AI setup, if that's how your org provisions Claude
+  - Access through a gateway/proxy your company provides (LiteLLM, internal router, etc.)
 
-Most of this stuff will work with any agentic coding assistant, but the instructions are tailored for Claude Code.
+Most of this stuff will work with any agentic coding assistant — including tools like the GitHub Copilot CLI, Cursor's CLI, Aider, or others. The instructions are tailored for Claude Code, but the persona + OpenSpec workflow transfers; you'll mostly be adapting the `claude` invocations and slash commands to your tool's equivalents.
 
 ---
 
@@ -95,6 +99,31 @@ If it prompts you to install Xcode Command Line Tools, say yes and wait for it t
 
 > **💡 Tip:** If you don't have a GitHub account yet, go create one at https://github.com/ — we'll need it later to push your project online.
 
+### 1.6 Claude Code
+
+**What it is:** Anthropic's command-line AI coding tool. It can read and write files, run commands, and work directly in your project. This is the tool we'll be driving the whole workflow through.
+
+**Install:**
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+**Verify:**
+
+```bash
+claude --version
+```
+
+**Authenticate** using whichever path matches your setup:
+
+- **Subscription (Pro/Max/Team/Enterprise):** just run `claude` and sign in through the browser prompt.
+- **Anthropic API key:** `export ANTHROPIC_API_KEY=sk-ant-...` (add it to your `~/.zshrc` to persist).
+- **Bedrock / Vertex:** set the provider env vars your org uses (e.g. `CLAUDE_CODE_USE_BEDROCK=1` with AWS creds, or `CLAUDE_CODE_USE_VERTEX=1` with GCP creds). Check your internal docs for the exact values.
+- **Gateway/proxy:** point `ANTHROPIC_BASE_URL` at your gateway and use the key it expects.
+
+If you'd rather drive this whole workflow with a different agentic CLI (GitHub Copilot CLI, Cursor CLI, Aider, etc.), install that instead — just translate the `claude ...` commands and `/opsx:*` slash commands to your tool's equivalents as you go.
+
 ---
 
 ## Part 2: Preparing Your Tools
@@ -171,13 +200,7 @@ Save as `ARCHITECT.md` in the same folder.
 
 ### 3.2 Discovery Phase (in Claude Code)
 
-Now we switch to Claude Code in the terminal. Claude Code is Anthropic's command-line AI coding tool — it can read and write files, run commands, and work directly in your project.
-
-**Install Claude Code** (if you haven't already):
-
-```bash
-curl -fsSL https://claude.ai/install.sh | bash
-```
+Now we switch to Claude Code in the terminal, which we installed back in §1.6.
 
 #### Interview with the Analyst
 
