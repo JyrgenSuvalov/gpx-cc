@@ -186,7 +186,7 @@ cd ~/workshop/
 claude --system-prompt-file ANALYST.md
 ```
 
-This starts Claude Code with your analyst persona loaded. Have a conversation about what you want to build. The analyst will interview you, push back on vague ideas, and help you crystallize your requirements. You can run /opsx:explore to do research or investigate specific questions during the conversation.
+This starts Claude Code with your analyst persona loaded. Have a conversation about what you want to build. The analyst will interview you, push back on vague ideas, and help you crystallize your requirements.
 
 When you're happy with the output, ask it to save the requirements to a file (e.g., `REQUIREMENTS.md`).
 
@@ -236,9 +236,10 @@ This is where it all comes together.
 
 ### 4.1 Initialize the Project
 
-Open Ghostty and navigate to your workshop folder:
+Open Ghostty and navigate to your workshop folder (create it if you haven't already):
 
 ```bash
+mkdir -p ~/workshop/
 cd ~/workshop/
 mkdir my-project && cd my-project
 ```
@@ -251,11 +252,7 @@ openspec init
 
 This creates the `openspec/` folder structure and configures your AI tool integration. When it asks which tools to configure, select **Claude Code**.
 
-**Set up Context7 MCP for this project** (if not done globally):
-
-```bash
-claude mcp add context7 -- pnpx -y @upstash/context7-mcp@latest
-```
+Context7 was already wired up globally in §2.1, so no per-project MCP setup is needed here.
 
 **Initialize Git:**
 
@@ -298,10 +295,10 @@ Now use the OpenSpec workflow to structure development:
 
 **Propose a change:**
 
-Tell the developer persona what to build (referencing your requirements and architecture docs), and it will run:
+Tell the developer persona what to build (referencing your requirements and architecture docs), then run:
 
 ```
-Use openspec propose to kick off the first phase.
+/opsx:propose
 ```
 
 This creates a proposal with specs, a design document, and a task list.
@@ -316,7 +313,7 @@ This creates a proposal with specs, a design document, and a task list.
 
 The developer persona will now implement the tasks one by one, writing actual code.
 
-> **💡 Tip:** If you're running low on context (check `/context`), although you should be able to see it in the statusline. Try to keep it under 200k tokens - if necessary ask the agent to summarize its work in an MD file and fire up a new session. This is to avoid context rot.
+> **💡 Tip:** Keep an eye on `/context` (or the statusline). Try to stay under 200k tokens — if you're getting close, ask the agent to summarize its work into an MD file and start a new session. This avoids context rot.
 
 ### 4.3 QA Review
 
@@ -393,13 +390,13 @@ You are a QA engineer. Review the code changes against the project specs...
 (paste your QA.md content here)
 ```
 
-Do the same for a dev persona, a planner, etc. The `description` field is important — Claude uses it to decide when to automatically delegate work to that subagent.
+Create an equivalent `.claude/agents/developer.md` using your `DEV.md` content, and do the same for any other personas (planner, analyst, etc.). The `description` field is important — Claude uses it to decide when to automatically delegate work to that subagent.
 
 ### 5.2 Use Them
 
-Now when you're in a main Claude Code session, you can simply ask it to delegate tasks to the subagents by name. Have the DEV persona do the openspec propose and apply work, then ask it to have the QA subagent review the changes without leaving the session. The main session stays focused on the overall workflow, while the subagents handle specialized tasks in their own context windows.
+Now when you're in a main Claude Code session, you can ask it to delegate tasks to the subagents by name. Have the `developer` subagent do the openspec propose and apply work, then have the `qa-reviewer` subagent review the changes — all without leaving the session. The main session stays focused on the overall workflow, while the subagents handle specialized tasks in their own context windows.
 
-- _"Have the developer use openspec propose to create a plan for the next phase"_
+- _"Have the developer subagent use /opsx:propose to create a plan for the next phase"_
 - _"Have the qa-reviewer check the latest changes"_
 - _"Use the qa-reviewer agent to review the auth module"_
 
