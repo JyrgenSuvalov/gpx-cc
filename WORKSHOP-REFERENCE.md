@@ -504,3 +504,18 @@ Repeat until you run out of tokens or time!
 ---
 
 _Happy building! Remember — the AI is a tool, not a replacement for thinking. Read the specs it generates, push back when something doesn't make sense, and stay engaged with the process. The best results come when you meet it halfway._
+
+---
+
+## Caveat: No dedicated design stage or designer persona
+
+This workflow currently jumps from **Analyst → Architect → Developer → QA** with no dedicated **design** stage in between. For anything with a user interface, that's a gap: visual design, UX flows, component hierarchy, accessibility, and interaction patterns all end up as implicit decisions made by the developer persona mid-build. The result is usually "whatever the LLM defaulted to" rather than something intentional — which is fine for a throwaway prototype, but weak for anything you'd actually ship.
+
+**Ways to close the gap:**
+
+- **Add a Designer persona (`DESIGNER.md`)** that runs between Architect and Developer. Feed it the requirements and architecture; have it produce a `DESIGN.md` covering user flows, key screens, component inventory, states (empty/loading/error), and a basic design system (colors, typography, spacing). The developer persona then implements against that document instead of improvising.
+- **Split design into UX and visual sub-stages.** One pass for flows, information architecture, and screen states; a second for look, feel, and design tokens. Bundling them is a big part of why generic AI output feels generic.
+- **Tool-augment the designer.** Prose-only design docs are weak anchors. Pair the persona with something like v0, Figma Make, or a screenshot-to-code flow — or at minimum have it produce ASCII wireframes and Mermaid user-flow diagrams so the developer has something concrete to build against.
+- **Promote the designer to a subagent** (see Part 5) once the flow feels right, so you can delegate design passes without starting a fresh session each time.
+
+**Tradeoff to be aware of:** more personas means more session-switching and more context overhead, which already strains the 5-hour limit. A single Designer persona producing one `DESIGN.md` is probably the right starting point; go more granular only if you find the output is still too vague.
